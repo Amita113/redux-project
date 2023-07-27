@@ -1,0 +1,51 @@
+we need two packages
+
+axios for calling API's and react-router-dom
+npm install axios
+npm install react-router-dom
+
+
+added cdn link for semantic ui
+
+removed manifest file
+
+-----------------
+
+to add redux in our project we need to add few dependencies in our project
+npm install redux react-redux
+
+which is going to let us use some hooks that we can connect from 
+react to redux
+
+life cycle method of redux
+
+action creators(components) --- trigger action-- which is diapatched 
+--- reducer --updates state and trigers a subscription through  
+which we updates the state of the components and are rerendered.
+
+lets create folders containers: components
+redux-- related to redux
+
+actions type and payload
+constants action types
+reducers  always takes initial state and action
+store.js
+
+if we want to see redux store --redux dev tool extention 
+we will be able to see redux dev tool in our inspect element 
+
+to see it in our inspect we need to link it to our index.js file
+import {provider} form react-redux
+
+
+The <Provider> component makes the Redux store available to any nested components that need to access the Redux store.
+
+Since any React component in a React Redux app can be connected to the store, most applications will render a <Provider> at the top level, with the entire app’s component tree inside of it.
+
+The Hooks and connect APIs can then access the provided store instance via React's Context mechanism.
+
+
+
+As your app grows more complex, you'll want to split your reducing function into separate functions, each managing independent parts of the state.
+
+The combineReducers helper function turns an object whose values are different reducing functions into a single reducing function you can pass to createStore.
